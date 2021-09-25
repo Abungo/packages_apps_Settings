@@ -21,7 +21,7 @@
          2 = left side
          3 = right side
     -->
-    <integer name="config_fingerprintSensorLocation">0</integer>
+    <integer name="config_fingerprintSensorLocation">1</integer>
 
     <!-- Device specific doze package -->
     <string name="config_customDozePackage" translatable="false"></string>
@@ -30,10 +30,10 @@
     <bool name="config_supportScreenOffFod">true</bool>
 
     <!-- Battery Health -->
-    <string name="config_batCurCap"></string>
-    <string name="config_batDesCap"></string>
-    <string name="config_batChargeCycle"></string>
-    <bool name="config_supportBatteryHealth">false</bool>
+    <string name="config_batCurCap">/sys/class/power_supply/battery/charge_full</string>
+    <string name="config_batDesCap">4000</string>
+    <string name="config_batChargeCycle">/sys/class/power_supply/battery/cycle_count</string>
+    <bool name="config_supportBatteryHealth">true</bool>
 
     <string-array name="config_ignored_backup_transports" translatable="false">
         <item>com.android.localtransport/.LocalTransport</item>
