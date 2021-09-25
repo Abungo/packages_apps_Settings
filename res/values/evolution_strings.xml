@@ -47,7 +47,7 @@
 
     <!-- About device screen, build maintainer -->
     <string name="build_maintainer">Build maintainer</string>
-    <string name="build_maintainer_summary">Unknown</string>
+    <string name="build_maintainer_summary">Abungo Thokchom</string>
 
     <!-- About device screen, Evolution X -->
     <string name="evolution_x_status">Evolution X status</string>
