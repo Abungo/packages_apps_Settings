@@ -31,8 +31,8 @@
 
     <!-- Battery Health -->
     <string name="config_batCurCap">/sys/class/power_supply/battery/charge_full</string>
-    <string name="config_batDesCap">4000</string>
-    <string name="config_batChargeCycle">/sys/class/power_supply/battery/cycle_count</string>
+    <string name="config_batDesCap">/sys/class/power_supply/battery/charge_full</string>
+    <string name="config_batChargeCycle">/sys/class/power_supply/battery/batt_soh</string>
     <bool name="config_supportBatteryHealth">true</bool>
 
     <string-array name="config_ignored_backup_transports" translatable="false">

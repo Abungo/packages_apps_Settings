@@ -152,7 +152,7 @@
     <string name="current_battery_capacity_summary">The current battery capacity measured by the kernel</string>
     <string name="designed_battery_capacity">Designed battery capacity</string>
     <string name="designed_battery_capacity_summary">The battery capacity designed by the manufacturer</string>
-    <string name="battery_charge_cycles">Charge cycles completed</string>
+    <string name="battery_charge_cycles">Battery State Of Health</string>
 
     <!-- Navbar options -->
     <string name="show_gestures_navbar_switch_title">Navbar pill</string>

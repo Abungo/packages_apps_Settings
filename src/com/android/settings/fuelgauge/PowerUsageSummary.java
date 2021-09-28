@@ -10,7 +10,7 @@
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
+v * See the License for the specific language governing permissions and
  * limitations under the License.
  */
 
@@ -417,7 +417,7 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
         mScreenUsagePref.setSubtitle(StringUtil.formatElapsedTime(getContext(),
                 mBatteryUtils.calculateScreenUsageTime(mStatsHelper), false));
         mCurrentBatteryCapacity.setSubtitle(parseBatterymAhText(mBatCurCap));
-        mDesignedBatteryCapacity.setSubtitle(parseBatterymAhText(mBatDesCap));
+        mDesignedBatteryCapacity.setSubtitle("4000 Mah");
         mBatteryChargeCycles.setSubtitle(parseBatteryCycle(mBatChgCyc));
         mBatteryTemp.setSubtitle(
                 EvolutionUtils.mccCheck(getContext()) ?
@@ -519,7 +519,7 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
 
     private String parseBatterymAhText(String file) {
         try {
-            return Integer.parseInt(readLine(file)) / 1000 + " mAh";
+            return Integer.parseInt(readLine(file)) + " mAh";
         } catch (IOException ioe) {
             Log.e(TAG, "Cannot read battery capacity from "
                     + file, ioe);
@@ -532,7 +532,7 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
 
     private String parseBatteryCycle(String file) {
         try {
-            return Integer.parseInt(readLine(file)) + " Cycles";
+            return Integer.parseInt(readLine(file)) / 10 + " Cycles";
         } catch (IOException ioe) {
             Log.e(TAG, "Cannot read battery cycle from "
                     + file, ioe);
