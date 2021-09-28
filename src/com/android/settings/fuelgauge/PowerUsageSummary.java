@@ -532,7 +532,7 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
 
     private String parseBatteryCycle(String file) {
         try {
-            return Integer.parseInt(readLine(file)) / 10 + " Cycles";
+            return Integer.parseInt(readLine(file)) / 10 + " %";
         } catch (IOException ioe) {
             Log.e(TAG, "Cannot read battery cycle from "
                     + file, ioe);
